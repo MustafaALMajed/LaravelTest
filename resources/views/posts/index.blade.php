@@ -9,7 +9,7 @@
                     <small> Written on {{$post->created_at}}</small>
                 </div>
             @endforeach
-            {{$posts->links()}}
+            <p>{{$posts->links()}}</p>
         @else 
             <p>No posts found</p>
         @endif

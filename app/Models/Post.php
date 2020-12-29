@@ -11,4 +11,7 @@ class Post extends Model
     // to change the table name protected $table = 'new name';
     // Primary key
     //public $primaryKey = 'post_id';
+    public function user(){
+        return $this->belongsTo('App\Models\User');
+    }
 }
